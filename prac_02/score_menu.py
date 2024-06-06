@@ -6,6 +6,7 @@ MENU = """
 
 
 def main():
+    """Display the menu"""
     score = 0
     print(MENU)
     choice = input(">>> ").upper()
@@ -31,6 +32,7 @@ def main():
 
 
 def get_score():
+    """Get score from user"""
     score = -1
     while score < 0 or score > 100:
         try:
@@ -43,10 +45,12 @@ def get_score():
 
 
 def print_result(score):
+    """Print result"""
     print("Result:", score)
 
 
 def show_stars(score):
+    """Show stars"""
     print("Stars:")
     for i in range(score):
         print("*", end="")
