@@ -10,4 +10,3 @@ while hex_code != "":
         print(hex_code, "is not a valid hex colour code")
     hex_code = input("Enter the hex colour code: ")
 
-# TODO have hex_accept input without spacing and lowercase.
