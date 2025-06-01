@@ -1,7 +1,7 @@
 MINIMUM_LENGTH = 4
 
 def main():
-    """Get and print password"""
+    """Get and print password."""
     password = get_password(MINIMUM_LENGTH)
     print_stars(password)
 
