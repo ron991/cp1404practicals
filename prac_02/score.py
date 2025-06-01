@@ -2,7 +2,8 @@
 CP1404/CP5632 - Practical
 Broken program to determine score status
 """
-
+def main():
+    """Get a numeric score and display its result"""
 
 
 score = float(input("Enter score: "))
@@ -14,3 +15,6 @@ elif score >= 50:
     print("Passable")
 else:
     print("Bad")
+
+
+main()
