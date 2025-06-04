@@ -49,3 +49,6 @@ print(f"{year} {name} for about ${cost:,.0f}!")
 # 2 ^ 8 is  256
 # 2 ^ 9 is  512
 # 2 ^10 is 1024
+
+for i, number in enumerate(numbers, 1):
+    print(f" {2} ^ {i} {number:2}")
