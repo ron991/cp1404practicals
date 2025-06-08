@@ -9,13 +9,28 @@ Answer the following questions:
 # Yes by adding a loop to ask for a non-zero denominator before the division.
 """
 
+# try:
+#     numerator = int(input("Enter the numerator: "))
+#     denominator = int(input("Enter the denominator: "))
+#     fraction = numerator / denominator
+#     print(fraction)
+# except ValueError:
+#     print("Numerator and denominator must be valid numbers!")
+# except ZeroDivisionError:
+#     print("Cannot divide by zero!")
+# print("Finished.")
+
+# Version 2
+
 try:
-    numerator = int(input("Enter the numerator: "))
-    denominator = int(input("Enter the denominator: "))
+    numerator = int(input("Enter a numerator: "))
+    denominator = int(input("Enter a denominator: "))
+    while denominator == 0:
+        print("Cannot divide by zero!")
+        denominator = int(input("Enter a denominator: "))
     fraction = numerator / denominator
     print(fraction)
 except ValueError:
     print("Numerator and denominator must be valid numbers!")
-except ZeroDivisionError:
-    print("Cannot divide by zero!")
+
 print("Finished.")
