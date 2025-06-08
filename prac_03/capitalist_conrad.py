@@ -18,11 +18,10 @@ INITIAL_PRICE = 10.0
 
 out_file = open("out.txt", "w")
 price = INITIAL_PRICE
-print(f"${price:,.2f}")
+#print(f"Starting price: ${price:,.2f}")
 number_of_days = 0
 
-
-
+print(f"Starting price: ${price:,.2f}", file=out_file)
 while MIN_PRICE <= price <= MAX_PRICE:
     price_change = 0
     number_of_days += 1
