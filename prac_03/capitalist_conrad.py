@@ -16,7 +16,7 @@ MAX_PRICE = 100.00
 INITIAL_PRICE = 10.0
 
 
-out_file = open("out.txt", "w")
+out_file = open("price.txt", "w")
 price = INITIAL_PRICE
 #print(f"Starting price: ${price:,.2f}")
 number_of_days = 0
