@@ -19,7 +19,7 @@ price = INITIAL_PRICE
 print(f"${price:,.2f}")
 number_of_days = 0
 
-
+out_file = open("out.txt", "w")
 
 while MIN_PRICE <= price <= MAX_PRICE:
     price_change = 0
@@ -37,4 +37,6 @@ while MIN_PRICE <= price <= MAX_PRICE:
 
     price *= (1 + price_change)
 
-    print(f"On day {number_of_days} price is ${price:,.2f}")
+    print(f"On day {number_of_days} price is ${price:,.2f}", file=out_file)
+
+out_file.close()
