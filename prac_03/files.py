@@ -35,3 +35,17 @@ with open("numbers.txt") as in_file:
 
 # 4. Now write a fourth block of code that prints the total for all lines in numbers.txt.
 # This should work for a file with any number of numbers. Use with instead of open and close for this question.
+
+
+#Version 1 # Preferred
+with open("numbers.txt") as in_file:
+    for line in in_file:
+        number = int(line)
+        print(number)
+
+#Version 2  Alternate
+# with open("numbers.txt") as in_file:
+#     number_one = int(in_file.readline())
+#     number_two = int(in_file.readline())
+#     number_three = int(in_file.readline())
+#     print(f"{number_one}\n{number_two}\n{number_three}")
