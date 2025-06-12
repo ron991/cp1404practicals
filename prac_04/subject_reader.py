@@ -7,13 +7,14 @@ FILENAME = "subject_data.txt"
 
 
 def main():
-    data = load_data()
-    print(data)
+
+    subject = load_subjects()
+    display_subjects(subject)
 
 
-def load_data():
+def load_subjects():
     """Read data from file formatted like: subject,lecturer,number of students."""
-    subjects = []
+    subject = []
     input_file = open(FILENAME)
     for line in input_file:
         print(line)  # See what a line looks like
@@ -24,13 +25,13 @@ def load_data():
         parts[2] = int(parts[2])  # Make the number an integer (ignore PyCharm's warning)
         print(parts)  # See if that worked
         print("----------")
-        subjects.append(parts)
+        subject.append(parts)
     input_file.close()
-    return subjects
+    return subject
 
 def display_subjects(subjects):
     for subject in subjects:
-        print(subject)
-
+        #print(subject)
+        print(f"{subject[0]} is taught by {subject[1]:12} and has {subject[2]:3} students.")
 
 main()
