@@ -14,12 +14,11 @@
 # Thelargestnumber is 20
 # The average of the numbers is 6.2
 
-
+# Basic List Operations
 numbers = []
 for i in range(5):
     number = int(input("Enter the number: "))
     numbers.append(number)
-
 
 print(f"The first number is: {numbers[0]}")
 print(f"The last number is: {numbers[-1]}")
