@@ -44,4 +44,5 @@ def main():
         print(" ".join(map(str, quick_pick)))
 
 
+
 main()
