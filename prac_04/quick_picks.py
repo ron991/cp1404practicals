@@ -28,6 +28,7 @@ NUMBERS_PER_LINE = 6
 
 
 def main():
+    """Generate and display quick picks"""
     number_of_quick_picks = int(input("How many quick picks would you like? "))
     while number_of_quick_picks < 0:
         print("Please enter a positive integer.")

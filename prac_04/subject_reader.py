@@ -7,6 +7,7 @@ FILENAME = "subject_data.txt"
 
 
 def main():
+    """Read subject data from file"""
 
     subject = load_subjects()
     display_subjects(subject)
@@ -30,6 +31,7 @@ def load_subjects():
     return subject
 
 def display_subjects(subjects):
+    """Display subjects list."""
     for subject in subjects:
         #print(subject)
         # Had to refer to solution ; Difficult
