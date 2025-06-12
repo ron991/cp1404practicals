@@ -32,6 +32,7 @@ def load_subjects():
 def display_subjects(subjects):
     for subject in subjects:
         #print(subject)
+        # Had to refer to solution ; Difficult
         print(f"{subject[0]} is taught by {subject[1]:12} and has {subject[2]:3} students.")
 
 main()

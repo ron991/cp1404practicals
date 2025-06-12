@@ -42,6 +42,7 @@ def main():
             quick_pick.append(number)
         quick_pick.sort()
         # print(" ".join(map(str, quick_pick)))
+        # Had to refer to solution ; Difficult
         print(" ".join(f"{number}" for number in quick_pick))
 
 main()
