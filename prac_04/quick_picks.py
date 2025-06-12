@@ -26,23 +26,22 @@ MINIMUM = 1
 MAXIMUM = 45
 NUMBERS_PER_LINE = 6
 
-def main():
 
+def main():
     number_of_quick_picks = int(input("How many quick picks would you like? "))
     while number_of_quick_picks < 0:
         print("Please enter a positive integer.")
         number_of_quick_picks = input("How many quick picks would you like?")
 
-    for i in range (number_of_quick_picks):
+    for i in range(number_of_quick_picks):
         quick_pick = []
-        for j in range (NUMBERS_PER_LINE):
+        for j in range(NUMBERS_PER_LINE):
             number = random.randint(MINIMUM, MAXIMUM)
             while number in quick_pick:
                 number = random.randint(MINIMUM, MAXIMUM)
             quick_pick.append(number)
         quick_pick.sort()
-        print(" ".join(map(str, quick_pick)))
-
-
+        # print(" ".join(map(str, quick_pick)))
+        print(" ".join(f"{number}" for number in quick_pick))
 
 main()
