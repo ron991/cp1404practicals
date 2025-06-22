@@ -19,10 +19,11 @@ COLOUR_NAME_TO_HEXADECIMAL_CODE = {
 
 }
 
+for code, name in COLOUR_NAME_TO_HEXADECIMAL_CODE.items():
+    print(f"{code:3} is {name}")
 
 def main():
     """Run a hexadecimal colour lookup program"""
 
 
-
-()
+main()
