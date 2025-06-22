@@ -18,7 +18,7 @@ COLOUR_NAME_TO_HEXADECIMAL_CODE = {
 
 
 }
-
+# From previous prac to display all available colours
 # for name, code in COLOUR_NAME_TO_HEXADECIMAL_CODE.items():
 #     print(f"{name:3} is {code}")
 
