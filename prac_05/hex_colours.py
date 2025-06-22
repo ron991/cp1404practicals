@@ -5,25 +5,34 @@ Colour codes in a dictionary:
 
 
 COLOUR_NAME_TO_HEXADECIMAL_CODE = {
-    "AbsoluteZero" : 	"#0048ba",
-    "Acid Green":    "#b0bf1a",
-    "AliceBlue" : "#f0f8ff",
-    "Alizarin crimson": "#e32636",
-    "Amaranth" : "#e52b50",
-    "Amber" : "#ffbf00",
-    "Amethyst" : "#9966cc",
-    "AntiqueWhite" : "#faebd7",
-    "AntiqueWhite1" : "#ffefdb",
-    "Apricot" : "#fbceb1"
+    "absolutezero" : 	"#0048ba",
+    "acidgreen":    "#b0bf1a",
+    "aliceblue" : "#f0f8ff",
+    "alizarincrimson": "#e32636",
+    "amaranth" : "#e52b50",
+    "amber" : "#ffbf00",
+    "amethyst" : "#9966cc",
+    "antiquewhite" : "#faebd7",
+    "antiquewhite1" : "#ffefdb",
+    "apricot" : "#fbceb1"
 
 
 }
 
-for code, name in COLOUR_NAME_TO_HEXADECIMAL_CODE.items():
-    print(f"{code:3} is {name}")
+# for name, code in COLOUR_NAME_TO_HEXADECIMAL_CODE.items():
+#     print(f"{name:3} is {code}")
 
 def main():
     """Run a hexadecimal colour lookup program"""
+    colour_name = input("Enter colour name: ").replace(" ", "").lower()
+    while colour_name != "":
+
+        try:
+            print(f"{colour_name} is {COLOUR_NAME_TO_HEXADECIMAL_CODE[colour_name]}")
+        except KeyError:
+            print(f"{colour_name} is not a hexadecimal colour")
+        colour_name = input("Enter colour name: ").replace(" ", "").lower()
+
 
 
 main()
