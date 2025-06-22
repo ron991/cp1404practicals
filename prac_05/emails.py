@@ -1,7 +1,7 @@
 """
 Emails
 Estimated time to complete: 2 hours
-Actual time to complete:
+Actual time to complete: 1 hour
 """
 
 def main():
@@ -13,7 +13,7 @@ def main():
 
         confirmation = input(f"Is your name {name}? (Y/n) ").lower()
         if confirmation not in ("", "y"):
-            email = input("Enter email: ")
+           name = input("Name: ")
 
         email_to_name[email] = name
         email = input("Enter email: ")
