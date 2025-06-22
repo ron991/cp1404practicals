@@ -16,9 +16,22 @@ def read_data(filename):
     """read data from csv."""
     with open(filename, encoding="utf-8-sig") as infile:
         infile.readline()
-        #test
-        print(infile.readline())
+        lines = [line.strip().split(',') for line in infile]
+    return lines
 
+def process_data(data):
+    """process data from csv."""
+    champion_wins = {}
+    countries = set()
+    for row in data:
+        champion = row[2]
+        country = row[1]
+        countries.add(country)
+        champion_wins[champion] = champion_wins.get(champion, 0) + 1
+    return champion_wins
+
+def display_champion_wins(champion_wins):
+    """Display champion wins with win counts."""
 main()
 
 
