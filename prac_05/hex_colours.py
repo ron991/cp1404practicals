@@ -23,7 +23,7 @@ COLOUR_NAME_TO_HEXADECIMAL_CODE = {
 #     print(f"{name:3} is {code}")
 
 def main():
-    """Run a hexadecimal colour lookup program"""
+    """Run a hexadecimal colour lookup program."""
     colour_name = input("Enter colour name: ").replace(" ", "").lower()
     while colour_name != "":
 

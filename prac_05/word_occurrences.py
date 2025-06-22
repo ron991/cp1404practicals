@@ -6,7 +6,7 @@ Actual time to complete: 20 mins
 
 
 def main():
-    """Run a word occurrence program"""
+    """Run a word occurrence program."""
 
 word_to_count = {}
 text = input("Enter text: ")

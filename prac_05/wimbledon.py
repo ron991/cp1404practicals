@@ -1,7 +1,7 @@
 """
 Wimbledon
 Estimated time to complete: 2 hours
-Actual time to complete:
+Actual time to complete: 3 hours
 """
 import csv
 
