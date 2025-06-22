@@ -11,6 +11,9 @@ FILENAME = "wimbledon.csv"
 def main():
     """Read data and print details of wimbledon champions and what countries have won."""
     data = read_data(FILENAME)
+    champion_wins, countries = process_data(data)
+    display_champion_wins(champion_wins)
+
 
 def read_data(filename):
     """read data from csv."""
@@ -28,10 +31,12 @@ def process_data(data):
         country = row[1]
         countries.add(country)
         champion_wins[champion] = champion_wins.get(champion, 0) + 1
-    return champion_wins
+    return champion_wins,countries
 
 def display_champion_wins(champion_wins):
     """Display champion wins with win counts."""
+    for champion, wins in champion_wins.items():
+        print(f"{champion}  {wins}")
 main()
 
 
