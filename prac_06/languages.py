@@ -5,3 +5,10 @@ Actual Time to complete:
 """
 
 from prac_06.programming_language import ProgrammingLanguage
+
+
+def main():
+    """List and print programming languages."""
+
+
+main()
