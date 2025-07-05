@@ -29,4 +29,10 @@ def run_tests():
     ruby = ProgrammingLanguage("Ruby", "Dynamic", True, 1995)
     visual_basic = ProgrammingLanguage("Visual Basic", "Static", False, 1991)
     python = ProgrammingLanguage("Python", "Dynamic", True, 1995)
+    languages = [ruby, visual_basic, python]
+    print(languages)
+
+
+if __name__ == "__main__":
+    run_tests()
 
