@@ -22,3 +22,11 @@ class ProgrammingLanguage:
     def is_dynamic(self):
         """Return True if the programming language is dynamic."""
         return self.typing == "Dynamic"
+
+
+def run_tests():
+    """Run all tests on the programming language class."""
+    ruby = ProgrammingLanguage("Ruby", "Dynamic", True, 1995)
+    visual_basic = ProgrammingLanguage("Visual Basic", "Static", False, 1991)
+    python = ProgrammingLanguage("Python", "Dynamic", True, 1995)
+
