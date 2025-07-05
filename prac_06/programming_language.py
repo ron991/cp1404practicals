@@ -31,7 +31,12 @@ def run_tests():
     python = ProgrammingLanguage("Python", "Dynamic", True, 1995)
     languages = [ruby, visual_basic, python]
     print(languages)
+    print(python)
 
+    print("The dynamically typed languages are:")
+    for language in languages:
+        if language.is_dynamic():
+            print(language.name)
 
 if __name__ == "__main__":
     run_tests()
