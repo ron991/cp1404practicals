@@ -20,10 +20,12 @@ def run_tests():
     cost = 16035.40
 
     guitar = Guitar(name,year,cost)
+    other = Guitar("Other Guitar", 2000, 3232.5)
 
     print(f"{guitar.name} get_age() - Expected {100}. Got {guitar.get_age()}")
-
-
+    print(f"{guitar.name} is_vintage() - Expected {True}. Got {guitar.is_vintage()}")
+    print(f"{other.name} get_age() - Expected {100}. Got {other.get_age()}")
+    print(f"{other.name} is_vintage() - Expected {True}. Got {other.is_vintage()}")
 
 
 if __name__ == "__main__":
