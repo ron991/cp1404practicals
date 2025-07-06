@@ -20,3 +20,5 @@ class Guitar:
     def get_age(self):
         """Get the age of the Guitar."""
         return
+
+    def is_vintage(self):
