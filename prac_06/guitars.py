@@ -20,17 +20,27 @@ def main():
     print("My guitars!")
     name = input("Name: ")
     while name != "":
-        try:
-            name = input("Name: ")
-        except NameError:
-            print("Name must be a string.")
+        valid_year = False
+        while not valid_year:
+            try:
+                year = int(input("Year: "))
+                if year > 0:
+                    valid_year = True
+                else:
+                    print("Year must be > 0")
+            except ValueError:
+                print("Invalid input.")
 
-    year = input("Year: ")
-    while year <= 0:
-        try:
-            year = int(input("Year: "))
+
+
         except ValueError:
             print("Year must be a number.")
+    cost = int(input("Cost: "))
+    while cost <= 0:
+        try:
+            cost = int(input("Cost: "))
+        except ValueError:
+            print("Cost must be a number.")
 
 
 main()
