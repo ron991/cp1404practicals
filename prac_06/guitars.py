@@ -33,8 +33,7 @@ def main():
 
 
 
-        except ValueError:
-            print("Year must be a number.")
+
     cost = int(input("Cost: "))
     while cost <= 0:
         try:
