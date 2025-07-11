@@ -1,5 +1,7 @@
 """
 Guitar class for guitar test and guitars program
+Estimated Time to complete: 1hr
+Actual Time to complete: 4hrs
 """
 
 CURRENT_YEAR = 2025

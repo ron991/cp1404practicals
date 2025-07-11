@@ -1,5 +1,7 @@
 """
 Guitar tests from guitar.py
+Estimated Time to complete: 1hr
+Actual Time to complete: 4hrs
 """
 
 from prac_06.guitar import Guitar, CURRENT_YEAR
