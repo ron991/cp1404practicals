@@ -30,16 +30,16 @@ def main():
                     print("Year must be > 0")
             except ValueError:
                 print("Invalid input.")
-
-
-
-
-    cost = int(input("Cost: "))
-    while cost <= 0:
-        try:
-            cost = int(input("Cost: "))
-        except ValueError:
-            print("Cost must be a number.")
+        valid_cost = False
+        while not valid_cost:
+                try:
+                    cost = int(input("Cost: "))
+                    if cost > 0:
+                        valid_cost = True
+                    else:
+                        print("Cost must be > 0")
+                except ValueError:
+                    print("Cost must be a number.")
 
 
 main()
