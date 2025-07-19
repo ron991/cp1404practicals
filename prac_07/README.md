@@ -1,6 +1,6 @@
 # Practical 07
 
-## Practical week 7 by Ronald Kelly
+## Classes and OOP by Ronald Kelly
 
 Welcome to my week 7 practical work!
 This repo will display my work for this week. I am part-time student studying a Bachelor of IT whilst going through full-time work and fatherhood.
