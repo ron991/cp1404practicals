@@ -14,9 +14,11 @@ def main():
     with open('guitars.csv', 'r', newline= '') as in_file:
         reader = csv.reader(in_file)
         for row in reader:
-            name, year, cost = row
-            guitar = Guitar(name, year, cost)
-            guitars.append(guitar)
+            name = row[0]
+            year = int(row[1])
+            cost = float(row[2])
+
+            guitars.append(Guitar(name, year, cost))
 
         for guitar in guitars:
             print(guitar)
