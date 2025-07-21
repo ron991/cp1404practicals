@@ -21,6 +21,7 @@ def main():
             guitars.append(Guitar(name, year, cost))
 
         for guitar in guitars:
+            #guitars.sort()
             print(guitar)
 
 
