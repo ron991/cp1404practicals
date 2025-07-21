@@ -8,10 +8,11 @@ import csv
 
 from guitar import Guitar
 
+
 def main():
     """Read file of guitars and store them in a list of guitar objects"""
     guitars = []
-    with open('guitars.csv', 'r', newline= '') as in_file:
+    with open('guitars.csv', 'r', newline='') as in_file:
         reader = csv.reader(in_file)
         for row in reader:
             name = row[0]
@@ -19,10 +20,10 @@ def main():
             cost = float(row[2])
 
             guitars.append(Guitar(name, year, cost))
+    guitars.sort()
 
-        for guitar in guitars:
-            #guitars.sort()
-            print(guitar)
+    for guitar in guitars:
+        print(guitar)
 
 
 main()
