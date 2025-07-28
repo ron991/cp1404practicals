@@ -6,6 +6,8 @@ from kivy.app import App
 from kivy.lang import Builder
 from kivy.properties import StringProperty
 
+MILES_TO_KM = 1.60934
+
 class ConvertMiles(App):
     output_km = StringProperty()
 
@@ -30,7 +32,7 @@ class ConvertMiles(App):
     def update_results(self, miles):
         """Update results"""
         print("update results")
-        self.output_km = str(miles * 1.60934)
+        self.output_km = str(miles * MILES_TO_KM)
 
     @staticmethod
     def convert_to_number(text):
