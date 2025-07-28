@@ -13,3 +13,16 @@ class ConvertMiles(App):
         """Build Kivy app"""
         self.title = "Convert Miles to Kilometers"
         self.root = Builder.load_file('convert_miles_km.kv')
+
+    def handle_calculate(self, text):
+        """Handle calculation of conversion """
+        print("handle calculate")
+        miles = self.convert_to_number(text)
+        self.update_results(miles)
+
+    def handle_increment(self, text, change):
+        """Handle up and down button press with increments"""
+        print("handle increment")
+        miles = self.convert_to_number(text) + change
+        self.root.ids.input_miles.text = str(miles)
+
