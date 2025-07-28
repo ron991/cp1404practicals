@@ -26,3 +26,8 @@ class ConvertMiles(App):
         miles = self.convert_to_number(text) + change
         self.root.ids.input_miles.text = str(miles)
 
+    def update_results(self, miles):
+        """Update results"""
+        print("update results")
+        self.output_km = str(miles * 1.60934)
+
