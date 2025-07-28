@@ -31,3 +31,11 @@ class ConvertMiles(App):
         print("update results")
         self.output_km = str(miles * 1.60934)
 
+    @staticmethod
+    def convert_to_number(text):
+        """Convert text to kilometers"""
+        try:
+            return float(text)
+        except ValueError:
+            return 0.0
+
