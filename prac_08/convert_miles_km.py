@@ -13,6 +13,7 @@ class ConvertMiles(App):
         """Build Kivy app"""
         self.title = "Convert Miles to Kilometers"
         self.root = Builder.load_file('convert_miles_km.kv')
+        return self.root
 
     def handle_calculate(self, text):
         """Handle calculation of conversion """
@@ -38,4 +39,7 @@ class ConvertMiles(App):
             return float(text)
         except ValueError:
             return 0.0
+
+
+ConvertMiles().run()
 
