@@ -9,6 +9,10 @@ from kivy.uix.label import Label
 from kivy.properties import StringProperty
 
 class DynamicLabels(App):
-    """Main program for dynamic labels"""
+    """Main program for dynamic labels."""
+    status_text = StringProperty()
+
+    def init(self):
+        """Construct main app."""
 
 
