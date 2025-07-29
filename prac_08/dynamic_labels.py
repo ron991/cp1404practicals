@@ -15,6 +15,12 @@ class DynamicLabels(App):
     def __init__(self, **kwargs):
         """Construct main app."""
         super().__init__(**kwargs)
+        self.names = ["Ron", "James", "Kelly"]
+
+
+
+
+
 
 
 
