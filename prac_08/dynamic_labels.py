@@ -34,6 +34,8 @@ class DynamicLabels(App):
             name_label.add_widget(label)
 
 
+DynamicLabels().run()
+
 
 
 
