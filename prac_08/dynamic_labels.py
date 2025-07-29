@@ -8,4 +8,7 @@ from kivy.lang import Builder
 from kivy.uix.label import Label
 from kivy.properties import StringProperty
 
+class DynamicLabels(App):
+    """Main program for dynamic labels"""
+
 
