@@ -17,6 +17,12 @@ class DynamicLabels(App):
         super().__init__(**kwargs)
         self.names = ["Ron", "James", "Kelly"]
 
+    def build(self):
+        """Build main app."""
+        self.title = "Dynamic Labels"
+        self.root =  Builder.load_file("dynamic_labels.kv")
+        return self.root
+
 
 
 
