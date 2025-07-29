@@ -12,7 +12,9 @@ class DynamicLabels(App):
     """Main program for dynamic labels."""
     status_text = StringProperty()
 
-    def init(self):
+    def __init__(self, **kwargs):
         """Construct main app."""
+        super().__init__(**kwargs)
+
 
 
