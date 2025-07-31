@@ -8,13 +8,17 @@ from prac_09.unreliable_car import UnreliableCar
 def main():
     """Test the unreliable car."""
 
-    bad_car = UnreliableCar("Needs work", 100, 30)
+    bad_car = UnreliableCar("Bomb", 100, 10)
+    average_car = UnreliableCar("toyota", 100, 80)
 
-    for i in range(1,10):
+
+    for i in range(1,12):
         print(f"Test drive {i}km: ")
-        print(f"{bad_car:12} drove {bad_car.drive(i):2}km")
+        print(f"{bad_car.name:12} drove {bad_car.drive(i):2}km")
+        print(f"{average_car.name:12} drove {average_car.drive(i):2}km")
 
     print(bad_car)
+    print(average_car)
 
 
 main()
