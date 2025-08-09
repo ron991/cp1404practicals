@@ -32,7 +32,7 @@ def run_tests():
     # the test below should fail
     assert repeat_string("hi", 2) == "hi hi"
 
-    # TODO: 1. fix the repeat_string function above so that it passes the failing test
+    # 
     # Hint: "-".join(["yo", "yo"] -> "yo-yo"
 
     # assert test with custom message,
