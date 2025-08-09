@@ -32,7 +32,7 @@ def run_tests():
     # the test below should fail
     assert repeat_string("hi", 2) == "hi hi"
 
-    # 
+    #
     # Hint: "-".join(["yo", "yo"] -> "yo-yo"
 
     # assert test with custom message,
@@ -46,6 +46,7 @@ def run_tests():
     # using the value passed in or the default
     # You should test both of these
     car = Car(fuel=10)
+    assert car.fuel == 0
 
 
 run_tests()
