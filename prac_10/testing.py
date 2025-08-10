@@ -70,3 +70,14 @@ doctest.testmod()
 # and one more that you decide is a useful test.
 # Run your doctests and watch the tests fail.
 # Then write the body of the function so that the tests pass.
+
+def phrase_as_sentence(phrase):
+    """Format a phrase as a sentence."""
+    sentence = phrase.strip().capitalize()
+    if not sentence.endswith('.'):
+        sentence += '.'
+    return sentence
+
+
+doctest.testmod()
+
