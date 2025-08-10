@@ -33,7 +33,8 @@ students helped find what I had missed.
 
 Doing code reviews helped understand how they approached each coding exercise. Which helped myself towards what errors
 I would make in my code. It also justified what habits I need to practice more such as not doing DRY coding as well as
-better naming conventions.
+better naming conventions. I have also learnt that I make lots of tiny commits for projects and understand it is
+negative habit and will try to make more milestone commits.
 
 Provide proper Markdown links (not bare URLs) to two (2) PRs that show you doing good code reviews for any of the past
 pracs.  
