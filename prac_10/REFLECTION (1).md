@@ -42,19 +42,23 @@ For each one, write a short explanation of what was good about your review.
 
 ### Good Code Review 1
 
-[]()
+[Github](https://github.com/MichaelB-G/CP1404/pull/1#pullrequestreview-2948145837)
 
 ### Explanation
 
-...
+I believe my review was good although the student did not complete kivy file needed for kivy_demo. I had mentioned
+that there were missing docstrings. I had commented that they were great attempts and that they were very hard programs 
+to code.
 
 ### Good Code Review 2
 
-[]()
+[Github](https://github.com/Gharma-P/cp1404practicals/pull/3#event-18957383400)
 
 ### Explanation
 
-...
+My explanation is that the student had demonstrated really nice clean code so it was hard to find an error in their
+work. I did however found very small errors such as a missing docstring in dynamic_labels.py as well as a simple full
+stop missing in the squaring.py exercise.
 
 ## Practicals
 
